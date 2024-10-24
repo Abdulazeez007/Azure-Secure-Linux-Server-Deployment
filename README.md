@@ -1,8 +1,8 @@
 # Azure-Secure-Linux-Server-Deployment
 Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell.
 
-## NETWORK TOOPOLOGY
- ![SOC]
+## NETWORK TOPOLOGY
+ ![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5825543737802081412_w.jpg)
 
  ## KEY OBJECTIVES
  1️⃣ Create a Resource Group: This is the foundation for your Azure resources—like the sturdy walls of a castle that keep everything inside organized and secure. 🏰
