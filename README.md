@@ -72,3 +72,13 @@ First Server (**Aurora-Server1**)
 Then, at the bash prompt for Aurora-Server1, enter the command ping -c 4 Aurora-Server2. This command sends four ICMP echo requests to Aurora-Server2, allowing you to check the network connectivity between the two servers. It will display the response times and confirm whether Aurora-Server2 is reachable from Aurora-Server1. Monitoring this connectivity can help diagnose network issues or verify that both servers are properly communicating within your infrastructure. 🌐
 
 ![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397648_w.jpg)
+
+As we can see, the ping was successful, with all packets delivered. This indicates that Aurora-Server1 can successfully communicate with Aurora-Server2, confirming that the network connection between the two servers is functioning properly. ✅
+
+Now, we can close the Bastion connection to Aurora-Server1. To connect to Aurora-Server2, simply repeat the steps outlined earlier for accessing Aurora-Server1. This will ensure that you can establish a secure connection to Aurora-Server2 and perform any necessary tasks or checks on that server as well. 🔄
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397649_w.jpg)
+
+Then, at the bash prompt for Aurora-Server2, enter the command ping -c 6 Aurora-Server1. This command sends four ICMP echo requests to Aurora-Server1, allowing you to check the network connectivity between the two servers. It will display the response times and confirm whether Aurora-Server1 is reachable from Aurora-Server2. Monitoring this connectivity can help diagnose network issues or verify that both servers are properly communicating within your infrastructure. 🌐
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397651_w.jpg)
