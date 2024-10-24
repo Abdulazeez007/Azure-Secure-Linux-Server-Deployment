@@ -27,3 +27,8 @@ I used New-AzResourceGroup to create a resource group to host the virtual networ
 Use New-AzVirtualNetwork to create a virtual network named ***Aurora-Vnet*** with IP address prefix ***10.0.0.0/16*** in the ***Aurora-RG*** resource group and ***centralus*** location
 
 ![SOC]
+
+## Next: Create a Subnet 
+configured subnet, and associated the subnet configurations to the virtual Network to a subnet within the virtual network. Use Add-AzVirtualNetworkSubnetConfig to create a subnet configuration named ***Aurora-Subnet*** with address prefix ***10.0.0.0/24***
+
+![SOC]
