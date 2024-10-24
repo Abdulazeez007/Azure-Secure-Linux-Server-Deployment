@@ -75,10 +75,36 @@ Then, at the bash prompt for Aurora-Server1, enter the command ping -c 4 Aurora-
 
 As we can see, the ping was successful, with all packets delivered. This indicates that Aurora-Server1 can successfully communicate with Aurora-Server2, confirming that the network connection between the two servers is functioning properly. ✅
 
-Now, we can close the Bastion connection to Aurora-Server1. To connect to Aurora-Server2, simply repeat the steps outlined earlier for accessing Aurora-Server1. This will ensure that you can establish a secure connection to Aurora-Server2 and perform any necessary tasks or checks on that server as well. 🔄
+Now, we can close the Bastion connection to Aurora-Server1. 
+## To connect to Aurora-Server2; 
+Simply repeat the steps outlined earlier for accessing Aurora-Server1. This will ensure that you can establish a secure connection to Aurora-Server2 and perform any necessary tasks or checks on that server as well. 🔄
 
 ![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397649_w.jpg)
 
 Then, at the bash prompt for Aurora-Server2, enter the command ping -c 6 Aurora-Server1. This command sends four ICMP echo requests to Aurora-Server1, allowing you to check the network connectivity between the two servers. It will display the response times and confirm whether Aurora-Server1 is reachable from Aurora-Server2. Monitoring this connectivity can help diagnose network issues or verify that both servers are properly communicating within your infrastructure. 🌐
 
 ![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397651_w.jpg)
+
+## Final STEP: De-provisioning
+
+When you've completed your tasks with cloud resources, it's crucial to de-provision them properly to prevent unnecessary billing costs. Failing to do so can lead to unexpected charges, especially if resources are left running.
+
+In my PowerShell session, I used the Remove-AzResourceGroup cmdlet to delete the entire resource group along with all its associated resources. This command ensures that everything within that resource group, including virtual machines, storage accounts, and any other resources, is removed in one go, streamlining the cleanup process.
+
+Here's the command I executed:
+***Remove-AzResourceGroup -Name "YourResourceGroupName" -Force***
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397660_w.jpg)
+
+Adding the -Force parameter bypasses the confirmation prompt, allowing for a quicker cleanup. Always double-check the resource group name to avoid accidentally deleting the wrong resources. By de-provisioning effectively, you help manage your cloud costs and maintain a tidy environment. 🧹💰
+
+## Conclusion and Summary
+I have successfully completed the objectives for this homelab, and I appreciate how this experience pushed me beyond my comfort zone in the GUI environment, allowing me to become more proficient in using the Azure Cloud shell.
+
+During this project:
+
+    I fully provisioned and de-provisioned Two Ubuntu Server environment using Azure PowerShell.
+    I set up and deployed a secure Bastion host to enable remote communication over port 443. The Bastion deployment is on the same subnet as my VMs, facilitating communication between them via their respective private IP addresses.
+
+This project not only enhanced my technical skills but also reinforced the importance of efficient resource management and secure configurations in cloud environments. 
+
