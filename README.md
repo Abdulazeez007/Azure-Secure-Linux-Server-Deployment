@@ -21,17 +21,15 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal 
 
 I used New-AzResourceGroup to create a resource group to host the virtual network and the VMs, to create a resource group named ***Aurora-RG*** in the ***centralus*** Azure region.
 
-![SOC]
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397667_w.jpg)
 
 ## STEP 2: Create Virtual Network
 Use New-AzVirtualNetwork to create a virtual network named ***Aurora-Vnet*** with IP address prefix ***10.0.0.0/16*** in the ***Aurora-RG*** resource group and ***centralus*** location
 
-![SOC]
-
 ## Next: Create a Subnet 
 configured subnet, and associated the subnet configurations to the virtual Network to a subnet within the virtual network. Use Add-AzVirtualNetworkSubnetConfig to create a subnet configuration named ***Aurora-Subnet*** with address prefix ***10.0.0.0/24***
 
-![SOC]
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5825543737802081335_w.jpg)
 
 ## STEP 3: Deploy Azure Bastion
 Azure Bastion enables secure, browser-based access to virtual machines (VMs) within your virtual network using Secure Shell (SSH) or Remote Desktop Protocol (RDP). This solution eliminates the need for VMs to have public IP addresses, client software, or any additional configurations, enhancing security and simplifying management. By leveraging Azure Bastion, cloud engineers can ensure that remote connections are securely facilitated through private IP addresses, reducing the attack surface and adhering to best practices for cloud security.
