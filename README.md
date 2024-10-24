@@ -1,5 +1,5 @@
 # Azure-Secure-Linux-Server-Deployment
-Provisioning Secure Azure Infrastructure with Azure CloudPowerShell: Deploying Ubuntu Servers and Bastion
+Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell.
 
 ## NETWORK TOOPOLOGY
  ![SOC]
