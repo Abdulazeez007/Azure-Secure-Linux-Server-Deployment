@@ -16,3 +16,9 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal 
 5️⃣ Connect to the VMs and establish communication using the simple ping command: Time for a friendly chat! With a quick ping, you'll ensure your VMs can talk to each other—think of it as sending a text to check if your friend is still awake at 3 AM. 📱💬
 
 6️⃣ Clean Up Resources: After all the fun, it’s time to tidy up! Just like putting away your toys after playtime, you’ll want to ensure everything is cleaned up properly to avoid any lingering costs. 🧹
+
+## STEP 1 Create Azure Resource Group
+
+I used New-AzResourceGroup to create a resource group to host the virtual network and the VMs, to create a resource group named ***Aurora-RG*** in the ***centralus*** Azure region.
+
+![SOC]
