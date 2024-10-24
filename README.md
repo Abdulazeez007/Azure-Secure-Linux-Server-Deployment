@@ -66,3 +66,9 @@ First Server (**Aurora-Server1**)
     -On the Connect to virtual machine page, select the Bastion tab.
     -Choose Use Bastion.
     -Enter the username and password you created for the Aurora-Server1, then click Connect. 🚀
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397647_w.jpg)
+
+Then, at the bash prompt for Aurora-Server1, enter the command ping -c 4 Aurora-Server2. This command sends four ICMP echo requests to Aurora-Server2, allowing you to check the network connectivity between the two servers. It will display the response times and confirm whether Aurora-Server2 is reachable from Aurora-Server1. Monitoring this connectivity can help diagnose network issues or verify that both servers are properly communicating within your infrastructure. 🌐
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397648_w.jpg)
