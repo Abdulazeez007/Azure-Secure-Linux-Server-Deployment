@@ -22,3 +22,8 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible terminal 
 I used New-AzResourceGroup to create a resource group to host the virtual network and the VMs, to create a resource group named ***Aurora-RG*** in the ***centralus*** Azure region.
 
 ![SOC]
+
+## STEP 2: Create Virtual Network
+Use New-AzVirtualNetwork to create a virtual network named ***Aurora-Vnet*** with IP address prefix ***10.0.0.0/16*** in the ***Aurora-RG*** resource group and ***centralus*** location
+
+![SOC]
