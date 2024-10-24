@@ -32,3 +32,8 @@ Use New-AzVirtualNetwork to create a virtual network named ***Aurora-Vnet*** wit
 configured subnet, and associated the subnet configurations to the virtual Network to a subnet within the virtual network. Use Add-AzVirtualNetworkSubnetConfig to create a subnet configuration named ***Aurora-Subnet*** with address prefix ***10.0.0.0/24***
 
 ![SOC]
+
+## STEP 3: Deploy Azure Bastion
+Azure Bastion enables secure, browser-based access to virtual machines (VMs) within your virtual network using Secure Shell (SSH) or Remote Desktop Protocol (RDP). This solution eliminates the need for VMs to have public IP addresses, client software, or any additional configurations, enhancing security and simplifying management. By leveraging Azure Bastion, cloud engineers can ensure that remote connections are securely facilitated through private IP addresses, reducing the attack surface and adhering to best practices for cloud security.
+
+First, I configured a dedicated Bastion subnet within the virtual network. This subnet is exclusively reserved for Azure Bastion resources and must be named **AzureBastionSubnet** to ensure proper functionality and compliance with Azure requirements.
