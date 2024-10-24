@@ -53,3 +53,16 @@ For the first Server, (Aurora-Server1) Set the administrator and password and pr
 Use New-AzVM to create two VMs named ***Aurora-Server1*** and ***Aurora-Server2*** in the subnet of the virtual network. When prompted for credentials, enter usernames and passwords for the VMs.
 
 ![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5823291937988397645_w.jpg)
+
+## STEP 5 Lauch Servers and Establish Connection
+
+Next, I connected to my VMs in the Azure Portal using the Bastion host I deployed earlier. This allows for secure RDP (3389) and SSH (22) connections over port 443, eliminating the need for public-facing IP addresses and enhancing the security of our connections. 🔒
+
+First Server (**Aurora-Server1**)
+
+    -In the portal, search for and select Virtual machines. 🖥️
+    -On the Virtual machines page, select Aurora-Server1.
+    -In the Overview section for Aurora-Server1, click Connect.
+    -On the Connect to virtual machine page, select the Bastion tab.
+    -Choose Use Bastion.
+    -Enter the username and password you created for the Aurora-Server1, then click Connect. 🚀
