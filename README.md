@@ -40,3 +40,7 @@ First, I configured a dedicated Bastion subnet within the virtual network. This 
 
 ## Next Create Bastion Public IP
 
+- set up a public IP address for the Bastion host, allowing it to access SSH and RDP over port 443.
+- Then Finally, I used the **New-AzBastion** command to create a new Standard SKU Bastion host in ***AzureBastion-Subnet***.
+
+![SOC](https://github.com/Virus192/Azure-Secure-Linux-Server-Deployment/blob/main/Images/photo_5825543737802081346_w.jpg)
